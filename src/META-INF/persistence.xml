@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="RrHhPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>persistencia.Referencias</class>
+    <class>persistencia.Puestos</class>
+    <class>persistencia.Localidades</class>
+    <class>persistencia.Lugares</class>
+    <class>persistencia.Movimientos</class>
+    <class>persistencia.Costos</class>
+    <class>persistencia.Cvs</class>
+    <class>persistencia.Tipodereferencias</class>
+    <class>persistencia.Profesiones</class>
+    <class>persistencia.Tiposmovimientos</class>
+    <class>persistencia.Busquedas</class>
+    <class>persistencia.Candidatos</class>
+    <class>persistencia.Empresas</class>
+    <class>persistencia.Agenda</class>
+    <class>persistencia.Entrevistadores</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/rrhh?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
